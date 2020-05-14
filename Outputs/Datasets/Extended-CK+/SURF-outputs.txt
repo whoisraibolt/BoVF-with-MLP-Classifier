@@ -1,0 +1,353 @@
+Number of Classes: 7
+
+Extract Features
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+Extracted SURF
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+Extracted SURF
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+Extracted SURF
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+Extracted SURF
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+Extracted SURF
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+Extracted SURF
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+Extracted SURF
+
+Time: 00:00:10 
+
+Create Bag of Visual Features
+
+Training SURF K-Means
+
+Time: 00:00:06 
+
+SURF Training Data
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+
+Time: 00:00:10 
+
+SURF Testing Data
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+
+Time: 00:00:01 
+
+Training SURF MLP Models
+
+SURF MLP Model 1
+
+Training Set Evaluation
+
+SGD, constant - train score: 0.44
+
+Time: 00:01:31 
+
+SURF MLP Model 2
+
+Training Set Evaluation
+
+SGD, optimal scaling - train score: 0.44
+
+Time: 00:01:31 
+
+SURF MLP Model 3
+
+Training Set Evaluation
+
+SGD + M = 0.3 - train score: 0.44
+
+Time: 00:01:06 
+
+SURF MLP Model 4
+
+Training Set Evaluation
+
+SGD + M = 0.6 - train score: 0.39
+
+Time: 00:00:47 
+
+SURF MLP Model 5
+
+Training Set Evaluation
+
+SGD + M = 0.9 - train score: 0.68
+
+Time: 00:00:37 
+
+SURF MLP Model 6
+
+Training Set Evaluation
+
+SGD + M = 0.9, adaptive-scaling - train score: 0.76
+
+Time: 00:01:20 
+
+SURF MLP Model 7
+
+Training Set Evaluation
+
+Adam - train score: 0.67
+
+Time: 00:00:21 
+
+Testing SURF MLP Model
+
+SURF MLP Model 1
+
+Testing Set Evaluation
+
+SGD, constant - test score: 0.37
+
+Time: 00:00:00 
+
+SURF MLP Model 2
+
+Testing Set Evaluation
+
+SGD - optimal - test score: 0.37
+
+Time: 00:00:00 
+
+SURF MLP Model 3
+
+Testing Set Evaluation
+
+SGD + M = 0.3 - test score: 0.36
+
+Time: 00:00:00 
+
+SURF MLP Model 4
+
+Testing Set Evaluation
+
+SGD + M = 0.6 - test score: 0.30
+
+Time: 00:00:00 
+
+SURF MLP Model 5
+
+Testing Set Evaluation
+
+SGD + M = 0.9 - test score: 0.42
+
+Time: 00:00:00 
+
+SURF MLP Model 6
+
+Testing Set Evaluation
+
+SGD + M = 0.9 + adaptive-scaling - test score: 0.46
+
+Time: 00:00:00 
+
+SURF MLP Model 7
+
+Testing Set Evaluation
+
+Adam - test score: 0.47
+
+Time: 00:00:00 
+
+SURF MLP Model 1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.36      0.09      0.15        44
+    disgust       0.00      0.00      0.00        59
+       fear       0.50      0.11      0.18        55
+      happy       0.42      0.55      0.48        96
+    neutral       0.31      0.79      0.45       148
+        sad       0.25      0.02      0.03        63
+   surprise       0.78      0.29      0.42       100
+
+avg / total       0.40      0.37      0.31       565
+
+SURF MLP Model 2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.36      0.09      0.15        44
+    disgust       0.00      0.00      0.00        59
+       fear       0.50      0.11      0.18        55
+      happy       0.42      0.55      0.48        96
+    neutral       0.31      0.79      0.45       148
+        sad       0.25      0.02      0.03        63
+   surprise       0.78      0.29      0.42       100
+
+avg / total       0.40      0.37      0.31       565
+
+SURF MLP Model 3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.3, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.22      0.05      0.08        44
+    disgust       0.00      0.00      0.00        59
+       fear       0.31      0.07      0.12        55
+      happy       0.47      0.44      0.45        96
+    neutral       0.30      0.82      0.44       148
+        sad       0.36      0.08      0.13        63
+   surprise       0.74      0.31      0.44       100
+
+avg / total       0.38      0.36      0.30       565
+
+SURF MLP Model 4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.6, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.18      0.36      0.24        44
+    disgust       0.00      0.00      0.00        59
+       fear       0.30      0.13      0.18        55
+      happy       0.31      0.86      0.45        96
+    neutral       0.29      0.26      0.28       148
+        sad       0.27      0.11      0.16        63
+   surprise       0.90      0.19      0.31       100
+
+avg / total       0.36      0.30      0.26       565
+
+SURF MLP Model 5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.27      0.34      0.30        44
+    disgust       0.60      0.10      0.17        59
+       fear       0.30      0.36      0.33        55
+      happy       0.54      0.66      0.59        96
+    neutral       0.35      0.39      0.37       148
+        sad       0.40      0.52      0.45        63
+   surprise       0.66      0.45      0.54       100
+
+avg / total       0.46      0.42      0.42       565
+
+SURF MLP Model 6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='adaptive', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.26      0.34      0.30        44
+    disgust       0.79      0.25      0.38        59
+       fear       0.39      0.38      0.39        55
+      happy       0.56      0.61      0.58        96
+    neutral       0.38      0.48      0.42       148
+        sad       0.46      0.51      0.48        63
+   surprise       0.62      0.45      0.52       100
+
+avg / total       0.50      0.46      0.46       565
+
+SURF MLP Model 7
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.48      0.34      0.40        44
+    disgust       0.52      0.24      0.33        59
+       fear       0.35      0.25      0.29        55
+      happy       0.62      0.60      0.61        96
+    neutral       0.39      0.64      0.49       148
+        sad       0.39      0.41      0.40        63
+   surprise       0.68      0.47      0.56       100
+
+avg / total       0.50      0.47      0.47       565
+
