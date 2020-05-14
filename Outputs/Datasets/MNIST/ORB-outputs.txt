@@ -1,0 +1,395 @@
+Number of Classes: 10
+
+Extract Features
+
+Processing the subdirectory named: 0 	[ 1 / 10 ]
+Extracted ORB
+
+Processing the subdirectory named: 1 	[ 2 / 10 ]
+Extracted ORB
+
+Processing the subdirectory named: 2 	[ 3 / 10 ]
+Extracted ORB
+
+Processing the subdirectory named: 3 	[ 4 / 10 ]
+Extracted ORB
+
+Processing the subdirectory named: 4 	[ 5 / 10 ]
+Extracted ORB
+
+Processing the subdirectory named: 5 	[ 6 / 10 ]
+Extracted ORB
+
+Processing the subdirectory named: 6 	[ 7 / 10 ]
+Extracted ORB
+
+Processing the subdirectory named: 7 	[ 8 / 10 ]
+Extracted ORB
+
+Processing the subdirectory named: 8 	[ 9 / 10 ]
+Extracted ORB
+
+Processing the subdirectory named: 9 	[ 10 / 10 ]
+Extracted ORB
+
+Time: 00:01:09 
+
+Create Bag of Visual Features
+
+Training ORB K-Means
+
+Time: 00:02:08 
+
+ORB Training Data
+
+Processing the subdirectory named: 0 	[ 1 / 10 ]
+
+Processing the subdirectory named: 1 	[ 2 / 10 ]
+
+Processing the subdirectory named: 2 	[ 3 / 10 ]
+
+Processing the subdirectory named: 3 	[ 4 / 10 ]
+
+Processing the subdirectory named: 4 	[ 5 / 10 ]
+
+Processing the subdirectory named: 5 	[ 6 / 10 ]
+
+Processing the subdirectory named: 6 	[ 7 / 10 ]
+
+Processing the subdirectory named: 7 	[ 8 / 10 ]
+
+Processing the subdirectory named: 8 	[ 9 / 10 ]
+
+Processing the subdirectory named: 9 	[ 10 / 10 ]
+
+Time: 00:01:03 
+
+ORB Testing Data
+
+Processing the subdirectory named: 0 	[ 1 / 10 ]
+
+Processing the subdirectory named: 1 	[ 2 / 10 ]
+
+Processing the subdirectory named: 2 	[ 3 / 10 ]
+
+Processing the subdirectory named: 3 	[ 4 / 10 ]
+
+Processing the subdirectory named: 4 	[ 5 / 10 ]
+
+Processing the subdirectory named: 5 	[ 6 / 10 ]
+
+Processing the subdirectory named: 6 	[ 7 / 10 ]
+
+Processing the subdirectory named: 7 	[ 8 / 10 ]
+
+Processing the subdirectory named: 8 	[ 9 / 10 ]
+
+Processing the subdirectory named: 9 	[ 10 / 10 ]
+
+Time: 00:00:21 
+
+Training ORB MLP Models
+
+ORB MLP Model 1
+
+Training Set Evaluation
+
+SGD, constant - train score: 0.47
+
+Time: 00:01:41 
+
+ORB MLP Model 2
+
+Training Set Evaluation
+
+SGD, optimal scaling - train score: 0.47
+
+Time: 00:01:41 
+
+ORB MLP Model 3
+
+Training Set Evaluation
+
+SGD + M = 0.3 - train score: 0.48
+
+Time: 00:01:21 
+
+ORB MLP Model 4
+
+Training Set Evaluation
+
+SGD + M = 0.6 - train score: 0.48
+
+Time: 00:00:38 
+
+ORB MLP Model 5
+
+Training Set Evaluation
+
+SGD + M = 0.9 - train score: 0.48
+
+Time: 00:00:29 
+
+ORB MLP Model 6
+
+Training Set Evaluation
+
+SGD + M = 0.9, adaptive-scaling - train score: 0.48
+
+Time: 00:00:45 
+
+ORB MLP Model 7
+
+Training Set Evaluation
+
+Adam - train score: 0.48
+
+Time: 00:00:16 
+
+Testing ORB MLP Model
+
+ORB MLP Model 1
+
+Testing Set Evaluation
+
+SGD, constant - test score: 0.48
+
+Time: 00:00:00 
+
+ORB MLP Model 2
+
+Testing Set Evaluation
+
+SGD - optimal - test score: 0.48
+
+Time: 00:00:00 
+
+ORB MLP Model 3
+
+Testing Set Evaluation
+
+SGD + M = 0.3 - test score: 0.48
+
+Time: 00:00:00 
+
+ORB MLP Model 4
+
+Testing Set Evaluation
+
+SGD + M = 0.6 - test score: 0.48
+
+Time: 00:00:00 
+
+ORB MLP Model 5
+
+Testing Set Evaluation
+
+SGD + M = 0.9 - test score: 0.48
+
+Time: 00:00:00 
+
+ORB MLP Model 6
+
+Testing Set Evaluation
+
+SGD + M = 0.9 + adaptive-scaling - test score: 0.49
+
+Time: 00:00:00 
+
+ORB MLP Model 7
+
+Testing Set Evaluation
+
+Adam - test score: 0.48
+
+Time: 00:00:00 
+
+ORB MLP Model 1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(5, 5), learning_rate='constant',
+       learning_rate_init=0.01, max_iter=5000, momentum=0,
+       nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.65      0.76      0.70       980
+          1       0.87      0.89      0.88      1134
+          2       0.28      0.33      0.30      1032
+          3       0.33      0.40      0.36      1010
+          4       0.53      0.63      0.58       982
+          5       0.29      0.01      0.02       892
+          6       0.30      0.26      0.28       958
+          7       0.48      0.63      0.55      1028
+          8       0.47      0.49      0.48       974
+          9       0.33      0.27      0.30      1009
+
+avg / total       0.46      0.48      0.45      9999
+
+ORB MLP Model 2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(5, 5), learning_rate='constant',
+       learning_rate_init=0.01, max_iter=5000, momentum=0,
+       nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.65      0.76      0.70       980
+          1       0.87      0.89      0.88      1134
+          2       0.28      0.33      0.30      1032
+          3       0.33      0.40      0.36      1010
+          4       0.53      0.63      0.58       982
+          5       0.29      0.01      0.02       892
+          6       0.30      0.26      0.28       958
+          7       0.48      0.63      0.55      1028
+          8       0.47      0.49      0.48       974
+          9       0.33      0.27      0.30      1009
+
+avg / total       0.46      0.48      0.45      9999
+
+ORB MLP Model 3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(5, 5), learning_rate='constant',
+       learning_rate_init=0.01, max_iter=5000, momentum=0.3,
+       nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.65      0.76      0.70       980
+          1       0.87      0.90      0.88      1134
+          2       0.30      0.26      0.28      1032
+          3       0.33      0.41      0.36      1010
+          4       0.55      0.61      0.58       982
+          5       0.22      0.10      0.14       892
+          6       0.30      0.23      0.26       958
+          7       0.48      0.64      0.55      1028
+          8       0.46      0.50      0.48       974
+          9       0.33      0.28      0.31      1009
+
+avg / total       0.46      0.48      0.46      9999
+
+ORB MLP Model 4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(5, 5), learning_rate='constant',
+       learning_rate_init=0.01, max_iter=5000, momentum=0.6,
+       nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.64      0.77      0.70       980
+          1       0.88      0.89      0.88      1134
+          2       0.29      0.30      0.29      1032
+          3       0.33      0.40      0.36      1010
+          4       0.53      0.66      0.59       982
+          5       0.18      0.06      0.09       892
+          6       0.29      0.28      0.28       958
+          7       0.49      0.62      0.55      1028
+          8       0.45      0.52      0.48       974
+          9       0.35      0.18      0.24      1009
+
+avg / total       0.45      0.48      0.45      9999
+
+ORB MLP Model 5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(5, 5), learning_rate='constant',
+       learning_rate_init=0.01, max_iter=5000, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.68      0.74      0.71       980
+          1       0.90      0.89      0.89      1134
+          2       0.30      0.29      0.30      1032
+          3       0.30      0.49      0.37      1010
+          4       0.50      0.68      0.57       982
+          5       0.21      0.04      0.06       892
+          6       0.28      0.18      0.22       958
+          7       0.55      0.61      0.58      1028
+          8       0.51      0.44      0.47       974
+          9       0.32      0.34      0.33      1009
+
+avg / total       0.46      0.48      0.46      9999
+
+ORB MLP Model 6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(5, 5), learning_rate='adaptive',
+       learning_rate_init=0.01, max_iter=5000, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.64      0.76      0.70       980
+          1       0.89      0.90      0.89      1134
+          2       0.30      0.31      0.30      1032
+          3       0.32      0.40      0.36      1010
+          4       0.50      0.68      0.58       982
+          5       0.20      0.02      0.04       892
+          6       0.29      0.27      0.28       958
+          7       0.56      0.62      0.59      1028
+          8       0.46      0.53      0.49       974
+          9       0.35      0.27      0.31      1009
+
+avg / total       0.46      0.49      0.46      9999
+
+ORB MLP Model 7
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(5, 5), learning_rate='constant',
+       learning_rate_init=0.01, max_iter=5000, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='adam', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.69      0.74      0.72       980
+          1       0.90      0.87      0.89      1134
+          2       0.27      0.35      0.31      1032
+          3       0.37      0.30      0.33      1010
+          4       0.54      0.57      0.55       982
+          5       0.24      0.14      0.17       892
+          6       0.28      0.35      0.31       958
+          7       0.50      0.65      0.57      1028
+          8       0.48      0.51      0.49       974
+          9       0.33      0.20      0.25      1009
+
+avg / total       0.47      0.48      0.47      9999
+
