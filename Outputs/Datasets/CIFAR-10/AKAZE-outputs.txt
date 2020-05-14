@@ -1,0 +1,40 @@
+Number of Classes: 10
+
+Extract Features
+
+Processing the subdirectory named: airplane 	[ 1 / 10 ]
+Extracted AKAZE
+
+Processing the subdirectory named: automobile 	[ 2 / 10 ]
+Extracted AKAZE
+
+Processing the subdirectory named: bird 	[ 3 / 10 ]
+Extracted AKAZE
+
+Processing the subdirectory named: cat 	[ 4 / 10 ]
+Extracted AKAZE
+
+Processing the subdirectory named: deer 	[ 5 / 10 ]
+Extracted AKAZE
+
+Processing the subdirectory named: dog 	[ 6 / 10 ]
+Extracted AKAZE
+
+Processing the subdirectory named: frog 	[ 7 / 10 ]
+Extracted AKAZE
+
+Processing the subdirectory named: horse 	[ 8 / 10 ]
+Extracted AKAZE
+
+Processing the subdirectory named: ship 	[ 9 / 10 ]
+Extracted AKAZE
+
+Processing the subdirectory named: truck 	[ 10 / 10 ]
+Extracted AKAZE
+
+Time: 00:01:57 
+
+Create Bag of Visual Features
+
+Training AKAZE K-Means
+
