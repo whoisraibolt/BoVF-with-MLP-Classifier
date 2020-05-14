@@ -1,0 +1,395 @@
+Number of Classes: 10
+
+Extract Features
+
+Processing the subdirectory named: 0 	[ 1 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: 1 	[ 2 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: 2 	[ 3 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: 3 	[ 4 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: 4 	[ 5 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: 5 	[ 6 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: 6 	[ 7 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: 7 	[ 8 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: 8 	[ 9 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: 9 	[ 10 / 10 ]
+Extracted SURF
+
+Time: 00:00:16 
+
+Create Bag of Visual Features
+
+Training SURF K-Means
+
+Time: 00:00:01 
+
+SURF Training Data
+
+Processing the subdirectory named: 0 	[ 1 / 10 ]
+
+Processing the subdirectory named: 1 	[ 2 / 10 ]
+
+Processing the subdirectory named: 2 	[ 3 / 10 ]
+
+Processing the subdirectory named: 3 	[ 4 / 10 ]
+
+Processing the subdirectory named: 4 	[ 5 / 10 ]
+
+Processing the subdirectory named: 5 	[ 6 / 10 ]
+
+Processing the subdirectory named: 6 	[ 7 / 10 ]
+
+Processing the subdirectory named: 7 	[ 8 / 10 ]
+
+Processing the subdirectory named: 8 	[ 9 / 10 ]
+
+Processing the subdirectory named: 9 	[ 10 / 10 ]
+
+Time: 00:00:12 
+
+SURF Testing Data
+
+Processing the subdirectory named: 0 	[ 1 / 10 ]
+
+Processing the subdirectory named: 1 	[ 2 / 10 ]
+
+Processing the subdirectory named: 2 	[ 3 / 10 ]
+
+Processing the subdirectory named: 3 	[ 4 / 10 ]
+
+Processing the subdirectory named: 4 	[ 5 / 10 ]
+
+Processing the subdirectory named: 5 	[ 6 / 10 ]
+
+Processing the subdirectory named: 6 	[ 7 / 10 ]
+
+Processing the subdirectory named: 7 	[ 8 / 10 ]
+
+Processing the subdirectory named: 8 	[ 9 / 10 ]
+
+Processing the subdirectory named: 9 	[ 10 / 10 ]
+
+Time: 00:00:04 
+
+Training SURF MLP Models
+
+SURF MLP Model 1
+
+Training Set Evaluation
+
+SGD, constant - train score: 0.69
+
+Time: 00:01:26 
+
+SURF MLP Model 2
+
+Training Set Evaluation
+
+SGD, optimal scaling - train score: 0.69
+
+Time: 00:01:26 
+
+SURF MLP Model 3
+
+Training Set Evaluation
+
+SGD + M = 0.3 - train score: 0.68
+
+Time: 00:01:19 
+
+SURF MLP Model 4
+
+Training Set Evaluation
+
+SGD + M = 0.6 - train score: 0.70
+
+Time: 00:00:45 
+
+SURF MLP Model 5
+
+Training Set Evaluation
+
+SGD + M = 0.9 - train score: 0.69
+
+Time: 00:00:31 
+
+SURF MLP Model 6
+
+Training Set Evaluation
+
+SGD + M = 0.9, adaptive-scaling - train score: 0.70
+
+Time: 00:00:52 
+
+SURF MLP Model 7
+
+Training Set Evaluation
+
+Adam - train score: 0.70
+
+Time: 00:00:16 
+
+Testing SURF MLP Model
+
+SURF MLP Model 1
+
+Testing Set Evaluation
+
+SGD, constant - test score: 0.69
+
+Time: 00:00:00 
+
+SURF MLP Model 2
+
+Testing Set Evaluation
+
+SGD - optimal - test score: 0.69
+
+Time: 00:00:00 
+
+SURF MLP Model 3
+
+Testing Set Evaluation
+
+SGD + M = 0.3 - test score: 0.67
+
+Time: 00:00:00 
+
+SURF MLP Model 4
+
+Testing Set Evaluation
+
+SGD + M = 0.6 - test score: 0.69
+
+Time: 00:00:00 
+
+SURF MLP Model 5
+
+Testing Set Evaluation
+
+SGD + M = 0.9 - test score: 0.68
+
+Time: 00:00:00 
+
+SURF MLP Model 6
+
+Testing Set Evaluation
+
+SGD + M = 0.9 + adaptive-scaling - test score: 0.70
+
+Time: 00:00:00 
+
+SURF MLP Model 7
+
+Testing Set Evaluation
+
+Adam - test score: 0.69
+
+Time: 00:00:00 
+
+SURF MLP Model 1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.73      0.96      0.83       683
+          1       0.90      0.99      0.95       264
+          2       0.66      0.55      0.60       247
+          3       0.59      0.33      0.42       136
+          4       0.53      0.65      0.58       141
+          5       0.00      0.00      0.00        98
+          6       0.30      0.40      0.35       130
+          7       0.76      0.79      0.77       342
+          8       0.57      0.31      0.40        74
+          9       0.29      0.06      0.10       121
+
+avg / total       0.64      0.69      0.65      2236
+
+SURF MLP Model 2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.73      0.96      0.83       683
+          1       0.90      0.99      0.95       264
+          2       0.66      0.55      0.60       247
+          3       0.59      0.33      0.42       136
+          4       0.53      0.65      0.58       141
+          5       0.00      0.00      0.00        98
+          6       0.30      0.40      0.35       130
+          7       0.76      0.79      0.77       342
+          8       0.57      0.31      0.40        74
+          9       0.29      0.06      0.10       121
+
+avg / total       0.64      0.69      0.65      2236
+
+SURF MLP Model 3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.3, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.79      0.93      0.85       683
+          1       0.90      0.99      0.95       264
+          2       0.81      0.39      0.52       247
+          3       0.39      0.50      0.44       136
+          4       0.48      0.70      0.57       141
+          5       0.00      0.00      0.00        98
+          6       0.07      0.04      0.05       130
+          7       0.66      0.86      0.75       342
+          8       0.57      0.31      0.40        74
+          9       0.28      0.19      0.23       121
+
+avg / total       0.63      0.67      0.64      2236
+
+SURF MLP Model 4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.6, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.77      0.93      0.85       683
+          1       0.90      0.99      0.94       264
+          2       0.70      0.62      0.66       247
+          3       0.37      0.46      0.41       136
+          4       0.68      0.43      0.52       141
+          5       0.00      0.00      0.00        98
+          6       0.38      0.41      0.39       130
+          7       0.71      0.82      0.76       342
+          8       0.55      0.30      0.39        74
+          9       0.18      0.12      0.14       121
+
+avg / total       0.65      0.69      0.66      2236
+
+SURF MLP Model 5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.79      0.93      0.85       683
+          1       0.90      0.99      0.95       264
+          2       0.65      0.66      0.65       247
+          3       0.45      0.26      0.33       136
+          4       0.72      0.40      0.52       141
+          5       0.00      0.00      0.00        98
+          6       0.27      0.54      0.36       130
+          7       0.72      0.83      0.77       342
+          8       0.55      0.30      0.39        74
+          9       0.13      0.06      0.08       121
+
+avg / total       0.64      0.68      0.65      2236
+
+SURF MLP Model 6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='adaptive', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.79      0.93      0.86       683
+          1       0.90      0.99      0.95       264
+          2       0.71      0.62      0.66       247
+          3       0.37      0.46      0.41       136
+          4       0.53      0.65      0.58       141
+          5       0.00      0.00      0.00        98
+          6       0.42      0.36      0.39       130
+          7       0.72      0.83      0.77       342
+          8       0.55      0.30      0.39        74
+          9       0.38      0.15      0.21       121
+
+avg / total       0.66      0.70      0.67      2236
+
+SURF MLP Model 7
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.77      0.94      0.85       683
+          1       0.90      0.99      0.94       264
+          2       0.72      0.62      0.67       247
+          3       0.37      0.46      0.41       136
+          4       0.69      0.43      0.53       141
+          5       0.00      0.00      0.00        98
+          6       0.38      0.41      0.39       130
+          7       0.76      0.79      0.78       342
+          8       0.57      0.31      0.40        74
+          9       0.25      0.21      0.23       121
+
+avg / total       0.66      0.69      0.67      2236
+
