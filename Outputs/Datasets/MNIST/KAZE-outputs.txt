@@ -1,0 +1,395 @@
+Number of Classes: 10
+
+Extract Features
+
+Processing the subdirectory named: 0 	[ 1 / 10 ]
+Extracted KAZE
+
+Processing the subdirectory named: 1 	[ 2 / 10 ]
+Extracted KAZE
+
+Processing the subdirectory named: 2 	[ 3 / 10 ]
+Extracted KAZE
+
+Processing the subdirectory named: 3 	[ 4 / 10 ]
+Extracted KAZE
+
+Processing the subdirectory named: 4 	[ 5 / 10 ]
+Extracted KAZE
+
+Processing the subdirectory named: 5 	[ 6 / 10 ]
+Extracted KAZE
+
+Processing the subdirectory named: 6 	[ 7 / 10 ]
+Extracted KAZE
+
+Processing the subdirectory named: 7 	[ 8 / 10 ]
+Extracted KAZE
+
+Processing the subdirectory named: 8 	[ 9 / 10 ]
+Extracted KAZE
+
+Processing the subdirectory named: 9 	[ 10 / 10 ]
+Extracted KAZE
+
+Time: 00:07:48 
+
+Create Bag of Visual Features
+
+Training KAZE K-Means
+
+Time: 00:00:44 
+
+KAZE Training Data
+
+Processing the subdirectory named: 0 	[ 1 / 10 ]
+
+Processing the subdirectory named: 1 	[ 2 / 10 ]
+
+Processing the subdirectory named: 2 	[ 3 / 10 ]
+
+Processing the subdirectory named: 3 	[ 4 / 10 ]
+
+Processing the subdirectory named: 4 	[ 5 / 10 ]
+
+Processing the subdirectory named: 5 	[ 6 / 10 ]
+
+Processing the subdirectory named: 6 	[ 7 / 10 ]
+
+Processing the subdirectory named: 7 	[ 8 / 10 ]
+
+Processing the subdirectory named: 8 	[ 9 / 10 ]
+
+Processing the subdirectory named: 9 	[ 10 / 10 ]
+
+Time: 00:01:01 
+
+KAZE Testing Data
+
+Processing the subdirectory named: 0 	[ 1 / 10 ]
+
+Processing the subdirectory named: 1 	[ 2 / 10 ]
+
+Processing the subdirectory named: 2 	[ 3 / 10 ]
+
+Processing the subdirectory named: 3 	[ 4 / 10 ]
+
+Processing the subdirectory named: 4 	[ 5 / 10 ]
+
+Processing the subdirectory named: 5 	[ 6 / 10 ]
+
+Processing the subdirectory named: 6 	[ 7 / 10 ]
+
+Processing the subdirectory named: 7 	[ 8 / 10 ]
+
+Processing the subdirectory named: 8 	[ 9 / 10 ]
+
+Processing the subdirectory named: 9 	[ 10 / 10 ]
+
+Time: 00:01:27 
+
+Training KAZE MLP Models
+
+KAZE MLP Model 1
+
+Training Set Evaluation
+
+SGD, constant - train score: 0.72
+
+Time: 00:09:41 
+
+KAZE MLP Model 2
+
+Training Set Evaluation
+
+SGD, optimal scaling - train score: 0.72
+
+Time: 00:09:39 
+
+KAZE MLP Model 3
+
+Training Set Evaluation
+
+SGD + M = 0.3 - train score: 0.73
+
+Time: 00:08:25 
+
+KAZE MLP Model 4
+
+Training Set Evaluation
+
+SGD + M = 0.6 - train score: 0.73
+
+Time: 00:05:43 
+
+KAZE MLP Model 5
+
+Training Set Evaluation
+
+SGD + M = 0.9 - train score: 0.74
+
+Time: 00:04:14 
+
+KAZE MLP Model 6
+
+Training Set Evaluation
+
+SGD + M = 0.9, adaptive-scaling - train score: 0.76
+
+Time: 00:06:13 
+
+KAZE MLP Model 7
+
+Training Set Evaluation
+
+Adam - train score: 0.72
+
+Time: 00:01:46 
+
+Testing KAZE MLP Model
+
+KAZE MLP Model 1
+
+Testing Set Evaluation
+
+SGD, constant - test score: 0.71
+
+Time: 00:00:00 
+
+KAZE MLP Model 2
+
+Testing Set Evaluation
+
+SGD - optimal - test score: 0.71
+
+Time: 00:00:00 
+
+KAZE MLP Model 3
+
+Testing Set Evaluation
+
+SGD + M = 0.3 - test score: 0.71
+
+Time: 00:00:00 
+
+KAZE MLP Model 4
+
+Testing Set Evaluation
+
+SGD + M = 0.6 - test score: 0.71
+
+Time: 00:00:00 
+
+KAZE MLP Model 5
+
+Testing Set Evaluation
+
+SGD + M = 0.9 - test score: 0.71
+
+Time: 00:00:00 
+
+KAZE MLP Model 6
+
+Testing Set Evaluation
+
+SGD + M = 0.9 + adaptive-scaling - test score: 0.72
+
+Time: 00:00:00 
+
+KAZE MLP Model 7
+
+Testing Set Evaluation
+
+Adam - test score: 0.70
+
+Time: 00:00:00 
+
+KAZE MLP Model 1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.59      0.73      0.65       980
+          1       0.94      0.95      0.94      1135
+          2       0.68      0.73      0.71      1032
+          3       0.71      0.69      0.70      1010
+          4       0.67      0.70      0.68       982
+          5       0.64      0.57      0.60       892
+          6       0.71      0.70      0.70       958
+          7       0.80      0.72      0.76      1028
+          8       0.69      0.65      0.67       974
+          9       0.67      0.63      0.65      1009
+
+avg / total       0.71      0.71      0.71     10000
+
+KAZE MLP Model 2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.59      0.73      0.65       980
+          1       0.94      0.95      0.94      1135
+          2       0.68      0.73      0.71      1032
+          3       0.71      0.69      0.70      1010
+          4       0.67      0.70      0.68       982
+          5       0.64      0.57      0.60       892
+          6       0.71      0.70      0.70       958
+          7       0.80      0.72      0.76      1028
+          8       0.69      0.65      0.67       974
+          9       0.67      0.63      0.65      1009
+
+avg / total       0.71      0.71      0.71     10000
+
+KAZE MLP Model 3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.3, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.59      0.74      0.66       980
+          1       0.95      0.94      0.94      1135
+          2       0.73      0.70      0.71      1032
+          3       0.75      0.65      0.70      1010
+          4       0.68      0.68      0.68       982
+          5       0.59      0.63      0.61       892
+          6       0.70      0.73      0.72       958
+          7       0.77      0.74      0.76      1028
+          8       0.69      0.62      0.66       974
+          9       0.65      0.63      0.64      1009
+
+avg / total       0.72      0.71      0.71     10000
+
+KAZE MLP Model 4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.6, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.65      0.66      0.65       980
+          1       0.95      0.94      0.94      1135
+          2       0.69      0.72      0.71      1032
+          3       0.71      0.68      0.69      1010
+          4       0.66      0.68      0.67       982
+          5       0.59      0.61      0.60       892
+          6       0.70      0.73      0.71       958
+          7       0.81      0.71      0.76      1028
+          8       0.70      0.61      0.65       974
+          9       0.63      0.69      0.66      1009
+
+avg / total       0.71      0.71      0.71     10000
+
+KAZE MLP Model 5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.64      0.71      0.67       980
+          1       0.95      0.94      0.94      1135
+          2       0.66      0.77      0.71      1032
+          3       0.73      0.68      0.71      1010
+          4       0.61      0.74      0.67       982
+          5       0.63      0.56      0.59       892
+          6       0.72      0.71      0.71       958
+          7       0.77      0.72      0.74      1028
+          8       0.71      0.60      0.65       974
+          9       0.66      0.60      0.63      1009
+
+avg / total       0.71      0.71      0.71     10000
+
+KAZE MLP Model 6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='adaptive', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.66      0.71      0.68       980
+          1       0.94      0.95      0.94      1135
+          2       0.73      0.73      0.73      1032
+          3       0.72      0.69      0.71      1010
+          4       0.66      0.69      0.67       982
+          5       0.60      0.62      0.61       892
+          6       0.72      0.73      0.72       958
+          7       0.79      0.71      0.75      1028
+          8       0.67      0.64      0.65       974
+          9       0.64      0.64      0.64      1009
+
+avg / total       0.72      0.72      0.72     10000
+
+KAZE MLP Model 7
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+          0       0.63      0.68      0.65       980
+          1       0.95      0.94      0.94      1135
+          2       0.70      0.72      0.71      1032
+          3       0.70      0.63      0.66      1010
+          4       0.65      0.63      0.64       982
+          5       0.59      0.60      0.60       892
+          6       0.74      0.67      0.70       958
+          7       0.82      0.69      0.75      1028
+          8       0.58      0.69      0.63       974
+          9       0.61      0.67      0.64      1009
+
+avg / total       0.70      0.70      0.70     10000
+
