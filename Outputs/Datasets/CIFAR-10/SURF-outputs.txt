@@ -1,0 +1,395 @@
+Number of Classes: 10
+
+Extract Features
+
+Processing the subdirectory named: airplane 	[ 1 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: automobile 	[ 2 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: bird 	[ 3 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: cat 	[ 4 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: deer 	[ 5 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: dog 	[ 6 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: frog 	[ 7 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: horse 	[ 8 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: ship 	[ 9 / 10 ]
+Extracted SURF
+
+Processing the subdirectory named: truck 	[ 10 / 10 ]
+Extracted SURF
+
+Time: 00:00:31 
+
+Create Bag of Visual Features
+
+Training SURF K-Means
+
+Time: 00:00:05 
+
+SURF Training Data
+
+Processing the subdirectory named: airplane 	[ 1 / 10 ]
+
+Processing the subdirectory named: automobile 	[ 2 / 10 ]
+
+Processing the subdirectory named: bird 	[ 3 / 10 ]
+
+Processing the subdirectory named: cat 	[ 4 / 10 ]
+
+Processing the subdirectory named: deer 	[ 5 / 10 ]
+
+Processing the subdirectory named: dog 	[ 6 / 10 ]
+
+Processing the subdirectory named: frog 	[ 7 / 10 ]
+
+Processing the subdirectory named: horse 	[ 8 / 10 ]
+
+Processing the subdirectory named: ship 	[ 9 / 10 ]
+
+Processing the subdirectory named: truck 	[ 10 / 10 ]
+
+Time: 00:00:20 
+
+SURF Testing Data
+
+Processing the subdirectory named: airplane 	[ 1 / 10 ]
+
+Processing the subdirectory named: automobile 	[ 2 / 10 ]
+
+Processing the subdirectory named: bird 	[ 3 / 10 ]
+
+Processing the subdirectory named: cat 	[ 4 / 10 ]
+
+Processing the subdirectory named: deer 	[ 5 / 10 ]
+
+Processing the subdirectory named: dog 	[ 6 / 10 ]
+
+Processing the subdirectory named: frog 	[ 7 / 10 ]
+
+Processing the subdirectory named: horse 	[ 8 / 10 ]
+
+Processing the subdirectory named: ship 	[ 9 / 10 ]
+
+Processing the subdirectory named: truck 	[ 10 / 10 ]
+
+Time: 00:00:08 
+
+Training SURF MLP Models
+
+SURF MLP Model 1
+
+Training Set Evaluation
+
+SGD, constant - train score: 0.11
+
+Time: 00:00:10 
+
+SURF MLP Model 2
+
+Training Set Evaluation
+
+SGD, optimal scaling - train score: 0.11
+
+Time: 00:00:10 
+
+SURF MLP Model 3
+
+Training Set Evaluation
+
+SGD + M = 0.3 - train score: 0.11
+
+Time: 00:00:10 
+
+SURF MLP Model 4
+
+Training Set Evaluation
+
+SGD + M = 0.6 - train score: 0.11
+
+Time: 00:00:07 
+
+SURF MLP Model 5
+
+Training Set Evaluation
+
+SGD + M = 0.9 - train score: 0.19
+
+Time: 00:01:11 
+
+SURF MLP Model 6
+
+Training Set Evaluation
+
+SGD + M = 0.9, adaptive-scaling - train score: 0.20
+
+Time: 00:01:38 
+
+SURF MLP Model 7
+
+Training Set Evaluation
+
+Adam - train score: 0.19
+
+Time: 00:00:30 
+
+Testing SURF MLP Model
+
+SURF MLP Model 1
+
+Testing Set Evaluation
+
+SGD, constant - test score: 0.11
+
+Time: 00:00:00 
+
+SURF MLP Model 2
+
+Testing Set Evaluation
+
+SGD - optimal - test score: 0.11
+
+Time: 00:00:00 
+
+SURF MLP Model 3
+
+Testing Set Evaluation
+
+SGD + M = 0.3 - test score: 0.11
+
+Time: 00:00:00 
+
+SURF MLP Model 4
+
+Testing Set Evaluation
+
+SGD + M = 0.6 - test score: 0.11
+
+Time: 00:00:00 
+
+SURF MLP Model 5
+
+Testing Set Evaluation
+
+SGD + M = 0.9 - test score: 0.18
+
+Time: 00:00:00 
+
+SURF MLP Model 6
+
+Testing Set Evaluation
+
+SGD + M = 0.9 + adaptive-scaling - test score: 0.18
+
+Time: 00:00:00 
+
+SURF MLP Model 7
+
+Testing Set Evaluation
+
+Adam - test score: 0.17
+
+Time: 00:00:00 
+
+SURF MLP Model 1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.00      0.00      0.00       450
+ automobile       0.00      0.00      0.00       419
+       bird       0.00      0.00      0.00       439
+        cat       0.00      0.00      0.00       383
+       deer       0.00      0.00      0.00       392
+        dog       0.00      0.00      0.00       380
+       frog       0.00      0.00      0.00       387
+      horse       0.11      1.00      0.20       474
+       ship       0.00      0.00      0.00       393
+      truck       0.00      0.00      0.00       459
+
+avg / total       0.01      0.11      0.02      4176
+
+SURF MLP Model 2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.00      0.00      0.00       450
+ automobile       0.00      0.00      0.00       419
+       bird       0.00      0.00      0.00       439
+        cat       0.00      0.00      0.00       383
+       deer       0.00      0.00      0.00       392
+        dog       0.00      0.00      0.00       380
+       frog       0.00      0.00      0.00       387
+      horse       0.11      1.00      0.20       474
+       ship       0.00      0.00      0.00       393
+      truck       0.00      0.00      0.00       459
+
+avg / total       0.01      0.11      0.02      4176
+
+SURF MLP Model 3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.3, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.09      0.02      0.03       450
+ automobile       0.00      0.00      0.00       419
+       bird       0.00      0.00      0.00       439
+        cat       0.00      0.00      0.00       383
+       deer       0.00      0.00      0.00       392
+        dog       0.00      0.00      0.00       380
+       frog       0.00      0.00      0.00       387
+      horse       0.11      0.98      0.20       474
+       ship       0.00      0.00      0.00       393
+      truck       0.00      0.00      0.00       459
+
+avg / total       0.02      0.11      0.03      4176
+
+SURF MLP Model 4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.6, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.10      0.35      0.16       450
+ automobile       0.00      0.00      0.00       419
+       bird       0.00      0.00      0.00       439
+        cat       0.00      0.00      0.00       383
+       deer       0.00      0.00      0.00       392
+        dog       0.00      0.00      0.00       380
+       frog       0.00      0.00      0.00       387
+      horse       0.11      0.64      0.19       474
+       ship       0.00      0.00      0.00       393
+      truck       0.00      0.00      0.00       459
+
+avg / total       0.02      0.11      0.04      4176
+
+SURF MLP Model 5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.20      0.29      0.24       450
+ automobile       0.16      0.22      0.19       419
+       bird       0.19      0.20      0.19       439
+        cat       0.11      0.00      0.01       383
+       deer       0.13      0.03      0.05       392
+        dog       0.12      0.11      0.12       380
+       frog       0.14      0.26      0.18       387
+      horse       0.20      0.38      0.26       474
+       ship       0.23      0.14      0.17       393
+      truck       0.14      0.08      0.10       459
+
+avg / total       0.17      0.18      0.15      4176
+
+SURF MLP Model 6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='adaptive', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.18      0.36      0.24       450
+ automobile       0.17      0.26      0.21       419
+       bird       0.21      0.18      0.19       439
+        cat       0.12      0.03      0.05       383
+       deer       0.12      0.03      0.05       392
+        dog       0.12      0.07      0.09       380
+       frog       0.14      0.21      0.17       387
+      horse       0.22      0.31      0.26       474
+       ship       0.24      0.14      0.18       393
+      truck       0.13      0.10      0.11       459
+
+avg / total       0.17      0.18      0.16      4176
+
+SURF MLP Model 7
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.16      0.40      0.23       450
+ automobile       0.17      0.29      0.21       419
+       bird       0.21      0.18      0.20       439
+        cat       0.00      0.00      0.00       383
+       deer       0.00      0.00      0.00       392
+        dog       0.00      0.00      0.00       380
+       frog       0.14      0.20      0.17       387
+      horse       0.16      0.38      0.23       474
+       ship       0.34      0.09      0.14       393
+      truck       0.14      0.07      0.09       459
+
+avg / total       0.14      0.17      0.13      4176
+
