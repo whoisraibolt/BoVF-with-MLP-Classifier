@@ -1,0 +1,353 @@
+Number of Classes: 7
+
+Extract Features
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+Extracted ORB
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+Extracted ORB
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+Extracted ORB
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+Extracted ORB
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+Extracted ORB
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+Extracted ORB
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+Extracted ORB
+
+Time: 00:00:36 
+
+Create Bag of Visual Features
+
+Training ORB K-Means
+
+Time: 00:07:15 
+
+ORB Training Data
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+
+Time: 00:00:33 
+
+ORB Testing Data
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+
+Time: 00:00:10 
+
+Training ORB MLP Models
+
+ORB MLP Model 1
+
+Training Set Evaluation
+
+SGD, constant - train score: 0.26
+
+Time: 00:02:07 
+
+ORB MLP Model 2
+
+Training Set Evaluation
+
+SGD, optimal scaling - train score: 0.26
+
+Time: 00:02:05 
+
+ORB MLP Model 3
+
+Training Set Evaluation
+
+SGD + M = 0.3 - train score: 0.27
+
+Time: 00:01:46 
+
+ORB MLP Model 4
+
+Training Set Evaluation
+
+SGD + M = 0.6 - train score: 0.30
+
+Time: 00:04:13 
+
+ORB MLP Model 5
+
+Training Set Evaluation
+
+SGD + M = 0.9 - train score: 0.33
+
+Time: 00:02:41 
+
+ORB MLP Model 6
+
+Training Set Evaluation
+
+SGD + M = 0.9, adaptive-scaling - train score: 0.37
+
+Time: 00:04:26 
+
+ORB MLP Model 7
+
+Training Set Evaluation
+
+Adam - train score: 0.27
+
+Time: 00:00:36 
+
+Testing ORB MLP Model
+
+ORB MLP Model 1
+
+Testing Set Evaluation
+
+SGD, constant - test score: 0.26
+
+Time: 00:00:00 
+
+ORB MLP Model 2
+
+Testing Set Evaluation
+
+SGD - optimal - test score: 0.26
+
+Time: 00:00:00 
+
+ORB MLP Model 3
+
+Testing Set Evaluation
+
+SGD + M = 0.3 - test score: 0.25
+
+Time: 00:00:00 
+
+ORB MLP Model 4
+
+Testing Set Evaluation
+
+SGD + M = 0.6 - test score: 0.26
+
+Time: 00:00:00 
+
+ORB MLP Model 5
+
+Testing Set Evaluation
+
+SGD + M = 0.9 - test score: 0.24
+
+Time: 00:00:00 
+
+ORB MLP Model 6
+
+Testing Set Evaluation
+
+SGD + M = 0.9 + adaptive-scaling - test score: 0.24
+
+Time: 00:00:00 
+
+ORB MLP Model 7
+
+Testing Set Evaluation
+
+Adam - test score: 0.27
+
+Time: 00:00:00 
+
+ORB MLP Model 1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.00      0.00      0.00       466
+    disgust       0.00      0.00      0.00        56
+       fear       0.20      0.01      0.02       496
+      happy       0.26      0.79      0.40       895
+    neutral       0.23      0.21      0.22       607
+        sad       0.22      0.02      0.03       653
+   surprise       0.24      0.18      0.21       415
+
+avg / total       0.20      0.26      0.17      3588
+
+ORB MLP Model 2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.00      0.00      0.00       466
+    disgust       0.00      0.00      0.00        56
+       fear       0.20      0.01      0.02       496
+      happy       0.26      0.79      0.40       895
+    neutral       0.23      0.21      0.22       607
+        sad       0.22      0.02      0.03       653
+   surprise       0.24      0.18      0.21       415
+
+avg / total       0.20      0.26      0.17      3588
+
+ORB MLP Model 3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.3, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.00      0.00      0.00       466
+    disgust       0.00      0.00      0.00        56
+       fear       0.17      0.01      0.02       496
+      happy       0.26      0.82      0.39       895
+    neutral       0.23      0.15      0.18       607
+        sad       0.17      0.01      0.01       653
+   surprise       0.24      0.19      0.21       415
+
+avg / total       0.19      0.25      0.16      3588
+
+ORB MLP Model 4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.6, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.34      0.02      0.04       466
+    disgust       0.00      0.00      0.00        56
+       fear       0.24      0.05      0.08       496
+      happy       0.27      0.68      0.39       895
+    neutral       0.24      0.15      0.18       607
+        sad       0.21      0.15      0.18       653
+   surprise       0.22      0.21      0.21       415
+
+avg / total       0.25      0.26      0.20      3588
+
+ORB MLP Model 5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.14      0.03      0.04       466
+    disgust       0.00      0.00      0.00        56
+       fear       0.18      0.05      0.08       496
+      happy       0.27      0.56      0.37       895
+    neutral       0.20      0.12      0.15       607
+        sad       0.22      0.29      0.25       653
+   surprise       0.24      0.20      0.22       415
+
+avg / total       0.21      0.24      0.20      3588
+
+ORB MLP Model 6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='adaptive', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.17      0.07      0.10       466
+    disgust       0.00      0.00      0.00        56
+       fear       0.14      0.07      0.09       496
+      happy       0.28      0.53      0.37       895
+    neutral       0.21      0.15      0.17       607
+        sad       0.22      0.22      0.22       653
+   surprise       0.23      0.20      0.21       415
+
+avg / total       0.21      0.24      0.21      3588
+
+ORB MLP Model 7
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.00      0.00      0.00       466
+    disgust       0.00      0.00      0.00        56
+       fear       0.00      0.00      0.00       496
+      happy       0.27      0.85      0.41       895
+    neutral       0.26      0.14      0.18       607
+        sad       0.00      0.00      0.00       653
+   surprise       0.26      0.28      0.27       415
+
+avg / total       0.14      0.27      0.16      3588
+
