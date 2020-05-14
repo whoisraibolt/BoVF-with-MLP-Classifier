@@ -1,0 +1,395 @@
+Number of Classes: 10
+
+Extract Features
+
+Processing the subdirectory named: airplane 	[ 1 / 10 ]
+Extracted SIFT
+
+Processing the subdirectory named: automobile 	[ 2 / 10 ]
+Extracted SIFT
+
+Processing the subdirectory named: bird 	[ 3 / 10 ]
+Extracted SIFT
+
+Processing the subdirectory named: cat 	[ 4 / 10 ]
+Extracted SIFT
+
+Processing the subdirectory named: deer 	[ 5 / 10 ]
+Extracted SIFT
+
+Processing the subdirectory named: dog 	[ 6 / 10 ]
+Extracted SIFT
+
+Processing the subdirectory named: frog 	[ 7 / 10 ]
+Extracted SIFT
+
+Processing the subdirectory named: horse 	[ 8 / 10 ]
+Extracted SIFT
+
+Processing the subdirectory named: ship 	[ 9 / 10 ]
+Extracted SIFT
+
+Processing the subdirectory named: truck 	[ 10 / 10 ]
+Extracted SIFT
+
+Time: 00:02:34 
+
+Create Bag of Visual Features
+
+Training SIFT K-Means
+
+Time: 00:05:58 
+
+SIFT Training Data
+
+Processing the subdirectory named: airplane 	[ 1 / 10 ]
+
+Processing the subdirectory named: automobile 	[ 2 / 10 ]
+
+Processing the subdirectory named: bird 	[ 3 / 10 ]
+
+Processing the subdirectory named: cat 	[ 4 / 10 ]
+
+Processing the subdirectory named: deer 	[ 5 / 10 ]
+
+Processing the subdirectory named: dog 	[ 6 / 10 ]
+
+Processing the subdirectory named: frog 	[ 7 / 10 ]
+
+Processing the subdirectory named: horse 	[ 8 / 10 ]
+
+Processing the subdirectory named: ship 	[ 9 / 10 ]
+
+Processing the subdirectory named: truck 	[ 10 / 10 ]
+
+Time: 00:00:56 
+
+SIFT Testing Data
+
+Processing the subdirectory named: airplane 	[ 1 / 10 ]
+
+Processing the subdirectory named: automobile 	[ 2 / 10 ]
+
+Processing the subdirectory named: bird 	[ 3 / 10 ]
+
+Processing the subdirectory named: cat 	[ 4 / 10 ]
+
+Processing the subdirectory named: deer 	[ 5 / 10 ]
+
+Processing the subdirectory named: dog 	[ 6 / 10 ]
+
+Processing the subdirectory named: frog 	[ 7 / 10 ]
+
+Processing the subdirectory named: horse 	[ 8 / 10 ]
+
+Processing the subdirectory named: ship 	[ 9 / 10 ]
+
+Processing the subdirectory named: truck 	[ 10 / 10 ]
+
+Time: 00:00:42 
+
+Training SIFT MLP Models
+
+SIFT MLP Model 1
+
+Training Set Evaluation
+
+SGD, constant - train score: 0.28
+
+Time: 00:09:08 
+
+SIFT MLP Model 2
+
+Training Set Evaluation
+
+SGD, optimal scaling - train score: 0.28
+
+Time: 00:08:58 
+
+SIFT MLP Model 3
+
+Training Set Evaluation
+
+SGD + M = 0.3 - train score: 0.28
+
+Time: 00:06:12 
+
+SIFT MLP Model 4
+
+Training Set Evaluation
+
+SGD + M = 0.6 - train score: 0.30
+
+Time: 00:07:15 
+
+SIFT MLP Model 5
+
+Training Set Evaluation
+
+SGD + M = 0.9 - train score: 0.31
+
+Time: 00:04:06 
+
+SIFT MLP Model 6
+
+Training Set Evaluation
+
+SGD + M = 0.9, adaptive-scaling - train score: 0.32
+
+Time: 00:06:33 
+
+SIFT MLP Model 7
+
+Training Set Evaluation
+
+Adam - train score: 0.27
+
+Time: 00:01:14 
+
+Testing SIFT MLP Model
+
+SIFT MLP Model 1
+
+Testing Set Evaluation
+
+SGD, constant - test score: 0.26
+
+Time: 00:00:00 
+
+SIFT MLP Model 2
+
+Testing Set Evaluation
+
+SGD - optimal - test score: 0.26
+
+Time: 00:00:00 
+
+SIFT MLP Model 3
+
+Testing Set Evaluation
+
+SGD + M = 0.3 - test score: 0.26
+
+Time: 00:00:00 
+
+SIFT MLP Model 4
+
+Testing Set Evaluation
+
+SGD + M = 0.6 - test score: 0.25
+
+Time: 00:00:00 
+
+SIFT MLP Model 5
+
+Testing Set Evaluation
+
+SGD + M = 0.9 - test score: 0.24
+
+Time: 00:00:00 
+
+SIFT MLP Model 6
+
+Testing Set Evaluation
+
+SGD + M = 0.9 + adaptive-scaling - test score: 0.25
+
+Time: 00:00:00 
+
+SIFT MLP Model 7
+
+Testing Set Evaluation
+
+Adam - test score: 0.24
+
+Time: 00:00:00 
+
+SIFT MLP Model 1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.40      0.37      0.39       993
+ automobile       0.28      0.31      0.29      1000
+       bird       0.23      0.17      0.19       997
+        cat       0.17      0.06      0.09       999
+       deer       0.17      0.17      0.17       999
+        dog       0.24      0.28      0.26      1000
+       frog       0.21      0.23      0.22      1000
+      horse       0.28      0.27      0.27      1000
+       ship       0.32      0.37      0.34       998
+      truck       0.27      0.40      0.32      1000
+
+avg / total       0.26      0.26      0.25      9986
+
+SIFT MLP Model 2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.40      0.37      0.39       993
+ automobile       0.28      0.31      0.29      1000
+       bird       0.23      0.17      0.19       997
+        cat       0.17      0.06      0.09       999
+       deer       0.17      0.17      0.17       999
+        dog       0.24      0.28      0.26      1000
+       frog       0.21      0.23      0.22      1000
+      horse       0.28      0.27      0.27      1000
+       ship       0.32      0.37      0.34       998
+      truck       0.27      0.40      0.32      1000
+
+avg / total       0.26      0.26      0.25      9986
+
+SIFT MLP Model 3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.3, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.38      0.39      0.38       993
+ automobile       0.25      0.40      0.31      1000
+       bird       0.22      0.15      0.18       997
+        cat       0.16      0.05      0.08       999
+       deer       0.18      0.11      0.14       999
+        dog       0.24      0.25      0.25      1000
+       frog       0.23      0.27      0.25      1000
+      horse       0.29      0.26      0.28      1000
+       ship       0.30      0.42      0.35       998
+      truck       0.27      0.35      0.30      1000
+
+avg / total       0.25      0.26      0.25      9986
+
+SIFT MLP Model 4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.6, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.38      0.36      0.37       993
+ automobile       0.29      0.26      0.27      1000
+       bird       0.23      0.18      0.20       997
+        cat       0.15      0.10      0.12       999
+       deer       0.18      0.16      0.17       999
+        dog       0.24      0.24      0.24      1000
+       frog       0.23      0.19      0.20      1000
+      horse       0.24      0.33      0.28      1000
+       ship       0.30      0.33      0.32       998
+      truck       0.26      0.41      0.32      1000
+
+avg / total       0.25      0.25      0.25      9986
+
+SIFT MLP Model 5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.41      0.30      0.35       993
+ automobile       0.24      0.40      0.30      1000
+       bird       0.20      0.22      0.21       997
+        cat       0.15      0.10      0.12       999
+       deer       0.15      0.06      0.09       999
+        dog       0.21      0.24      0.23      1000
+       frog       0.22      0.20      0.21      1000
+      horse       0.27      0.31      0.29      1000
+       ship       0.32      0.29      0.30       998
+      truck       0.25      0.33      0.28      1000
+
+avg / total       0.24      0.24      0.24      9986
+
+SIFT MLP Model 6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='adaptive', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.39      0.34      0.37       993
+ automobile       0.25      0.33      0.28      1000
+       bird       0.21      0.18      0.19       997
+        cat       0.16      0.08      0.11       999
+       deer       0.16      0.12      0.14       999
+        dog       0.21      0.26      0.23      1000
+       frog       0.22      0.22      0.22      1000
+      horse       0.27      0.27      0.27      1000
+       ship       0.31      0.36      0.33       998
+      truck       0.27      0.34      0.30      1000
+
+avg / total       0.24      0.25      0.24      9986
+
+SIFT MLP Model 7
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.36      0.41      0.38       993
+ automobile       0.27      0.23      0.24      1000
+       bird       0.19      0.25      0.22       997
+        cat       0.13      0.01      0.02       999
+       deer       0.20      0.07      0.10       999
+        dog       0.23      0.29      0.26      1000
+       frog       0.20      0.07      0.11      1000
+      horse       0.24      0.35      0.28      1000
+       ship       0.26      0.29      0.27       998
+      truck       0.22      0.46      0.30      1000
+
+avg / total       0.23      0.24      0.22      9986
+
