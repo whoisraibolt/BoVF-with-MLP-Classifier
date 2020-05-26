@@ -38,7 +38,7 @@ To install the dependencies run:
 | `-h`, `--help`| Show help message and exit                                              |
 | `--detector`  | Specify SIFT or SURF or KAZE or ORB or BRISK or AKAZE                   |
 | `--descriptor`| Specify SIFT or SURF or KAZE or BRIEF or ORB or BRISK or AKAZE or FREAK |
-| `--dataset `  | Specify MNIST or JAFFE or Extended CK+ or FEI or CIFAR-10 or FER-2013 |
+| `--dataset `  | Specify MNIST or JAFFE or Extended-CK+ or FEI or CIFAR-10 or FER-2013 |
 
 ## Examples
 
