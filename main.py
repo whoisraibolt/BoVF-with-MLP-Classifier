@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# Evaluating a Bag of Visual Features (BoVF) approach extracting
-# Features for Handwritten Digit Recognition and
-# Classification Task through MLP Classifier
+# Comparative Evaluation of Feature Descriptors Through
+# Bag of Visual Features with Multilayer Perceptron
+# on Embedded GPU System
 
 # Imports
 from timer import Timer
@@ -166,8 +166,6 @@ print('Extract Features\n', file = globals.file)
 
 object = sorted(os.listdir(globals.data_train_images))    
 
-#wall_start, cpu_start = time.time(), time.clock()
-
 i, total = 0, len(object)
 
 with Timer() as timer:
@@ -203,8 +201,6 @@ print('Create Bag of Visual Features\n', file = globals.file)
 
 # Train K-Means
 print('Training', arguments.descriptor, 'K-Means\n', file = globals.file)
-
-#wall_start, cpu_start = time.time(), time.clock()
 
 with Timer() as timer:
     kmeans = features.trainKMeans(matrix)
