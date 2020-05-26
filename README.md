@@ -51,6 +51,7 @@ To install the dependencies run:
 <!--
 ## Improvements
 
+- If article is accepted, change README.md;
 - Use Netron to visualize the MLPs models;
 - OpenCV optimization with CUDA.
  --> 
