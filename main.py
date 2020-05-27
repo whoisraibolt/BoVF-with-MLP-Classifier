@@ -67,7 +67,7 @@ parser.add_argument('--dataset',
 arguments = parser.parse_args()
 
 # File name
-filename = 'Outputs/Datasets/FEI/%s-outputs.txt' % arguments.descriptor
+filename = 'Outputs/Datasets/%s/%s-outputs.txt' % (arguments.dataset, arguments.descriptor)
 
 # Open File to write
 outputs.openFile(filename = filename)
