@@ -1,8 +1,13 @@
+<!--
 # Comparative Evaluation of Feature Descriptors Through Bag of Visual Features with Multilayer Perceptron on Embedded GPU System
+-->
+
+# BoVF-with-MLP-Classifier
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/whoisraibolt/BoVF-with-MLP-Classifier.svg)
 ![GitHub](https://img.shields.io/github/license/whoisraibolt/BoVF-with-MLP-Classifier.svg)
 
+<!--
 ## People
 
 Alexandra Raibolt   ( [Lattes](http://lattes.cnpq.br/4144500977095845 "Lattes") | [E-mail](mailto:raibolt@ime.eb.br "E-mail") )
@@ -10,10 +15,12 @@ Alexandra Raibolt   ( [Lattes](http://lattes.cnpq.br/4144500977095845 "Lattes") 
 Alberto Angonese    ( [Lattes](http://lattes.cnpq.br/8039229243803003 "Lattes") | [E-mail](mailto:aangonese@faeterj-petropolis.edu.br "E-mail") )
 
 Paulo Rosa          ( [Lattes](http://lattes.cnpq.br/1512717941866097 "Lattes") | [E-mail](mailto:rpaulo@ime.eb.br "E-mail") )
-
+->
+<!--
 ## Overview
 
 Comparative evaluation of Local Feature Descriptors such as SIFT, SURF, and KAZE, and Local Binary Descriptors such as BRIEF, ORB, BRISK, AKAZE, and FREAK through Bag of Visual Features (BoVF) approach with Multilayer Perceptron (MLP) classifier for the tasks of recognition and classification on six visual datasets (MNIST, JAFFE, Extended CK+, FEI, CIFAR-10, and FER-2013) on an embedded GPU system: The NVIDIA's Jetson Nano.
+-->
 
 **Notice:**
 
