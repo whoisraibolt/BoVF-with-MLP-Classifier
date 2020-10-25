@@ -1,6 +1,8 @@
 # Comparative Evaluation of Feature Descriptors Through Bag of Visual Features with Multilayer Perceptron on Embedded GPU System
 
-Paper published in 17th IEEE Latin American Robotics Symposium/8th Brazilian Symposium of Robotics (LARS/SBR 2020).
+Paper published in 17th IEEE Latin American Robotics Symposium/8th Brazilian Symposium of Robotics
+
+LARS/SBR 2020
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/whoisraibolt/BoVF-with-MLP-Classifier)
 ![GitHub](https://img.shields.io/github/license/whoisraibolt/BoVF-with-MLP-Classifier)
