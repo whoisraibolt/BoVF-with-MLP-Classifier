@@ -29,7 +29,19 @@ Loop Closure Detection (LCD) is one of the most significant steps for a Simultan
 
 ## References
 
-`[...]`
+- A. Raibolt, A. Angonese and P. Rosa, "Comparative Evaluation of Feature Descriptors Through Bag of Visual Features with Multilayer Perceptron on Embedded GPU System," 2020 Latin American Robotics Symposium (LARS), 2020 Brazilian Symposium on Robotics (SBR) and 2020 Workshop on Robotics in Education (WRE), Natal, Brazil, 2020, pp. 1-6, doi: 10.1109/LARS/SBR/WRE51543.2020.9306931.
+
+```
+@INPROCEEDINGS{9306931,
+  author={A. {Raibolt} and A. {Angonese} and P. {Rosa}},
+  booktitle={2020 Latin American Robotics Symposium (LARS), 2020 Brazilian Symposium on Robotics (SBR) and 2020 Workshop on Robotics in Education (WRE)}, 
+  title={Comparative Evaluation of Feature Descriptors Through Bag of Visual Features with Multilayer Perceptron on Embedded GPU System}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={10.1109/LARS/SBR/WRE51543.2020.9306931}}
+```
 
 ## Dependencies
 
