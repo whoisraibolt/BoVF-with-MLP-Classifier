@@ -1,0 +1,48 @@
+Detector selected: <BRISK 0x7f5bde1990>
+
+Descriptor selected: <BRISK 0x7f5bde1a30>
+
+Training-set path: Datasets/MNIST/Dataset/Train/
+
+Test-set path: Datasets/MNIST/Dataset/Test/
+
+Number of Classes: 10
+
+Extract Features
+
+Processing the subdirectory named: 0 	[ 1 / 10 ]
+Extracted BRISK 
+
+Processing the subdirectory named: 1 	[ 2 / 10 ]
+Extracted BRISK 
+
+Processing the subdirectory named: 2 	[ 3 / 10 ]
+Extracted BRISK 
+
+Processing the subdirectory named: 3 	[ 4 / 10 ]
+Extracted BRISK 
+
+Processing the subdirectory named: 4 	[ 5 / 10 ]
+Extracted BRISK 
+
+Processing the subdirectory named: 5 	[ 6 / 10 ]
+Extracted BRISK 
+
+Processing the subdirectory named: 6 	[ 7 / 10 ]
+Extracted BRISK 
+
+Processing the subdirectory named: 7 	[ 8 / 10 ]
+Extracted BRISK 
+
+Processing the subdirectory named: 8 	[ 9 / 10 ]
+Extracted BRISK 
+
+Processing the subdirectory named: 9 	[ 10 / 10 ]
+Extracted BRISK 
+
+Time: 00:00:48 
+
+Create Bag of Visual Features
+
+Training BRISK K-Means
+

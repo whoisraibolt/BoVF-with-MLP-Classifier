@@ -1,0 +1,338 @@
+Detector selected: <xfeatures2d_SIFT 0x7f4aeb5990>
+
+Descriptor selected: <xfeatures2d_SIFT 0x7f4aeb5a30>
+
+Training-set path: Datasets/CIFAR-10/Dataset/Train/
+
+Test-set path: Datasets/CIFAR-10/Dataset/Test/
+
+Number of Classes: 10
+
+Extract Features
+
+Processing the subdirectory named: airplane 	[ 1 / 10 ]
+Extracted KAZE 
+
+Processing the subdirectory named: automobile 	[ 2 / 10 ]
+Extracted KAZE 
+
+Processing the subdirectory named: bird 	[ 3 / 10 ]
+Extracted KAZE 
+
+Processing the subdirectory named: cat 	[ 4 / 10 ]
+Extracted KAZE 
+
+Processing the subdirectory named: deer 	[ 5 / 10 ]
+Extracted KAZE 
+
+Processing the subdirectory named: dog 	[ 6 / 10 ]
+Extracted KAZE 
+
+Processing the subdirectory named: frog 	[ 7 / 10 ]
+Extracted KAZE 
+
+Processing the subdirectory named: horse 	[ 8 / 10 ]
+Extracted KAZE 
+
+Processing the subdirectory named: ship 	[ 9 / 10 ]
+Extracted KAZE 
+
+Processing the subdirectory named: truck 	[ 10 / 10 ]
+Extracted KAZE 
+
+Time: 00:02:59 
+
+Create Bag of Visual Features
+
+Training KAZE K-Means
+
+Time: 00:05:09 
+
+KAZE Training Data
+
+Processing the subdirectory named: airplane 	[ 1 / 10 ]
+
+Processing the subdirectory named: automobile 	[ 2 / 10 ]
+
+Processing the subdirectory named: bird 	[ 3 / 10 ]
+
+Processing the subdirectory named: cat 	[ 4 / 10 ]
+
+Processing the subdirectory named: deer 	[ 5 / 10 ]
+
+Processing the subdirectory named: dog 	[ 6 / 10 ]
+
+Processing the subdirectory named: frog 	[ 7 / 10 ]
+
+Processing the subdirectory named: horse 	[ 8 / 10 ]
+
+Processing the subdirectory named: ship 	[ 9 / 10 ]
+
+Processing the subdirectory named: truck 	[ 10 / 10 ]
+
+Time: 00:00:56 
+
+KAZE Testing Data
+
+Processing the subdirectory named: airplane 	[ 1 / 10 ]
+
+Processing the subdirectory named: automobile 	[ 2 / 10 ]
+
+Processing the subdirectory named: bird 	[ 3 / 10 ]
+
+Processing the subdirectory named: cat 	[ 4 / 10 ]
+
+Processing the subdirectory named: deer 	[ 5 / 10 ]
+
+Processing the subdirectory named: dog 	[ 6 / 10 ]
+
+Processing the subdirectory named: frog 	[ 7 / 10 ]
+
+Processing the subdirectory named: horse 	[ 8 / 10 ]
+
+Processing the subdirectory named: ship 	[ 9 / 10 ]
+
+Processing the subdirectory named: truck 	[ 10 / 10 ]
+
+Time: 00:00:46 
+
+Training KAZE MLP Models
+
+KAZE MLP1
+
+Training Set Evaluation
+
+sgd + M = 0 + constant - train score: 0.27
+
+KAZE MLP2
+
+Training Set Evaluation
+
+sgd + M = 0.3 + constant - train score: 0.28
+
+KAZE MLP3
+
+Training Set Evaluation
+
+sgd + M = 0.6 + constant - train score: 0.28
+
+KAZE MLP4
+
+Training Set Evaluation
+
+sgd + M = 0.9 + constant - train score: 0.31
+
+KAZE MLP5
+
+Training Set Evaluation
+
+sgd + M = 0.9 + adaptive - train score: 0.32
+
+KAZE MLP6
+
+Training Set Evaluation
+
+adam + M = 0.9 + constant - train score: 0.27
+
+Testing KAZE MLP Model
+
+KAZE MLP1
+
+Testing Set Evaluation
+
+sgd + M = 0 + constant - test score: 0.25
+
+KAZE MLP2
+
+Testing Set Evaluation
+
+sgd + M = 0.3 + constant - test score: 0.25
+
+KAZE MLP3
+
+Testing Set Evaluation
+
+sgd + M = 0.6 + constant - test score: 0.25
+
+KAZE MLP4
+
+Testing Set Evaluation
+
+sgd + M = 0.9 + constant - test score: 0.25
+
+KAZE MLP5
+
+Testing Set Evaluation
+
+sgd + M = 0.9 + adaptative - test score: 0.24
+
+KAZE MLP6
+
+Testing Set Evaluation
+
+adam + M = 0.9 + constant - test score: 0.24
+
+Classification Report
+
+KAZE MLP1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.38      0.34      0.36       993
+ automobile       0.27      0.34      0.31      1000
+       bird       0.22      0.17      0.19       997
+        cat       0.15      0.08      0.10       999
+       deer       0.17      0.17      0.17       999
+        dog       0.24      0.25      0.24      1000
+       frog       0.21      0.17      0.19      1000
+      horse       0.26      0.31      0.28      1000
+       ship       0.31      0.32      0.32       998
+      truck       0.24      0.38      0.29      1000
+
+avg / total       0.25      0.25      0.25      9986
+
+KAZE MLP2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.3, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.36      0.36      0.36       993
+ automobile       0.28      0.32      0.30      1000
+       bird       0.22      0.14      0.17       997
+        cat       0.16      0.11      0.13       999
+       deer       0.19      0.15      0.17       999
+        dog       0.24      0.27      0.25      1000
+       frog       0.21      0.15      0.18      1000
+      horse       0.28      0.28      0.28      1000
+       ship       0.29      0.39      0.33       998
+      truck       0.24      0.36      0.29      1000
+
+avg / total       0.25      0.25      0.25      9986
+
+KAZE MLP3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.6, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.35      0.38      0.36       993
+ automobile       0.28      0.33      0.30      1000
+       bird       0.22      0.16      0.18       997
+        cat       0.17      0.08      0.11       999
+       deer       0.17      0.12      0.14       999
+        dog       0.24      0.25      0.24      1000
+       frog       0.20      0.21      0.21      1000
+      horse       0.24      0.32      0.27      1000
+       ship       0.30      0.33      0.32       998
+      truck       0.25      0.31      0.28      1000
+
+avg / total       0.24      0.25      0.24      9986
+
+KAZE MLP4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.37      0.37      0.37       993
+ automobile       0.27      0.32      0.29      1000
+       bird       0.22      0.15      0.18       997
+        cat       0.16      0.07      0.09       999
+       deer       0.18      0.13      0.15       999
+        dog       0.23      0.30      0.26      1000
+       frog       0.18      0.27      0.22      1000
+      horse       0.24      0.29      0.26      1000
+       ship       0.32      0.31      0.32       998
+      truck       0.25      0.26      0.26      1000
+
+avg / total       0.24      0.25      0.24      9986
+
+KAZE MLP5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='adaptive', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.37      0.33      0.35       993
+ automobile       0.25      0.28      0.27      1000
+       bird       0.23      0.17      0.20       997
+        cat       0.16      0.05      0.08       999
+       deer       0.18      0.14      0.16       999
+        dog       0.22      0.29      0.25      1000
+       frog       0.20      0.23      0.21      1000
+      horse       0.24      0.29      0.26      1000
+       ship       0.32      0.34      0.33       998
+      truck       0.24      0.32      0.27      1000
+
+avg / total       0.24      0.24      0.24      9986
+
+KAZE MLP6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+   airplane       0.35      0.39      0.37       993
+ automobile       0.26      0.22      0.24      1000
+       bird       0.20      0.25      0.22       997
+        cat       0.15      0.03      0.05       999
+       deer       0.19      0.06      0.09       999
+        dog       0.22      0.24      0.23      1000
+       frog       0.16      0.09      0.12      1000
+      horse       0.25      0.30      0.27      1000
+       ship       0.30      0.32      0.31       998
+      truck       0.21      0.47      0.29      1000
+
+avg / total       0.23      0.24      0.22      9986
+

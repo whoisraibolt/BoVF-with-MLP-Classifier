@@ -1,0 +1,299 @@
+Detector selected: <BRISK 0x7f7e739990>
+
+Descriptor selected: <BRISK 0x7f7e739a30>
+
+Training-set path: Datasets/JAFFE/Dataset/Train/
+
+Test-set path: Datasets/JAFFE/Dataset/Test/
+
+Number of Classes: 7
+
+Extract Features
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+Extracted BRISK 
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+Extracted BRISK 
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+Extracted BRISK 
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+Extracted BRISK 
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+Extracted BRISK 
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+Extracted BRISK 
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+Extracted BRISK 
+
+Time: 00:00:00 
+
+Create Bag of Visual Features
+
+Training BRISK K-Means
+
+Time: 00:00:00 
+
+BRISK Training Data
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+
+Time: 00:00:00 
+
+BRISK Testing Data
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+
+Time: 00:00:00 
+
+Training BRISK MLP Models
+
+BRISK MLP1
+
+Training Set Evaluation
+
+sgd + M = 0 + constant - train score: 0.17
+
+BRISK MLP2
+
+Training Set Evaluation
+
+sgd + M = 0.3 + constant - train score: 0.17
+
+BRISK MLP3
+
+Training Set Evaluation
+
+sgd + M = 0.6 + constant - train score: 0.17
+
+BRISK MLP4
+
+Training Set Evaluation
+
+sgd + M = 0.9 + constant - train score: 0.73
+
+BRISK MLP5
+
+Training Set Evaluation
+
+sgd + M = 0.9 + adaptive - train score: 0.97
+
+BRISK MLP6
+
+Training Set Evaluation
+
+adam + M = 0.9 + constant - train score: 1.00
+
+Testing BRISK MLP Model
+
+BRISK MLP1
+
+Testing Set Evaluation
+
+sgd + M = 0 + constant - test score: 0.11
+
+BRISK MLP2
+
+Testing Set Evaluation
+
+sgd + M = 0.3 + constant - test score: 0.11
+
+BRISK MLP3
+
+Testing Set Evaluation
+
+sgd + M = 0.6 + constant - test score: 0.11
+
+BRISK MLP4
+
+Testing Set Evaluation
+
+sgd + M = 0.9 + constant - test score: 0.19
+
+BRISK MLP5
+
+Testing Set Evaluation
+
+sgd + M = 0.9 + adaptative - test score: 0.19
+
+BRISK MLP6
+
+Testing Set Evaluation
+
+adam + M = 0.9 + constant - test score: 0.21
+
+Classification Report
+
+BRISK MLP1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.00      0.00      0.00        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.10      1.00      0.18         6
+      happy       0.00      0.00      0.00        10
+    neutral       0.00      0.00      0.00        10
+        sad       1.00      0.12      0.22         8
+   surprise       0.00      0.00      0.00         9
+
+avg / total       0.14      0.11      0.05        63
+
+BRISK MLP2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.3, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.00      0.00      0.00        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.10      1.00      0.18         6
+      happy       0.00      0.00      0.00        10
+    neutral       0.00      0.00      0.00        10
+        sad       1.00      0.12      0.22         8
+   surprise       0.00      0.00      0.00         9
+
+avg / total       0.14      0.11      0.05        63
+
+BRISK MLP3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.6, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.00      0.00      0.00        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.10      1.00      0.18         6
+      happy       0.00      0.00      0.00        10
+    neutral       0.00      0.00      0.00        10
+        sad       1.00      0.12      0.22         8
+   surprise       0.00      0.00      0.00         9
+
+avg / total       0.14      0.11      0.05        63
+
+BRISK MLP4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.22      0.40      0.29        10
+    disgust       0.43      0.30      0.35        10
+       fear       0.10      0.17      0.12         6
+      happy       0.12      0.10      0.11        10
+    neutral       0.00      0.00      0.00        10
+        sad       0.08      0.12      0.10         8
+   surprise       0.67      0.22      0.33         9
+
+avg / total       0.24      0.19      0.19        63
+
+BRISK MLP5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='adaptive', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.25      0.30      0.27        10
+    disgust       0.38      0.30      0.33        10
+       fear       0.00      0.00      0.00         6
+      happy       0.27      0.30      0.29        10
+    neutral       0.20      0.20      0.20        10
+        sad       0.00      0.00      0.00         8
+   surprise       0.10      0.11      0.11         9
+
+avg / total       0.19      0.19      0.19        63
+
+BRISK MLP6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.08      0.10      0.09        10
+    disgust       0.44      0.40      0.42        10
+       fear       0.17      0.17      0.17         6
+      happy       0.25      0.10      0.14        10
+    neutral       0.17      0.10      0.12        10
+        sad       0.22      0.25      0.24         8
+   surprise       0.18      0.33      0.23         9
+
+avg / total       0.22      0.21      0.20        63
+

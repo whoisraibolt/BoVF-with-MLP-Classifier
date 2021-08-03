@@ -1,0 +1,39 @@
+Detector selected: <AKAZE 0x7f5bd48990>
+
+Descriptor selected: <AKAZE 0x7f5bd48a30>
+
+Training-set path: Datasets/JAFFE/Dataset/Train/
+
+Test-set path: Datasets/JAFFE/Dataset/Test/
+
+Number of Classes: 7
+
+Extract Features
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+Extracted AKAZE 
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+Extracted AKAZE 
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+Extracted AKAZE 
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+Extracted AKAZE 
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+Extracted AKAZE 
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+Extracted AKAZE 
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+Extracted AKAZE 
+
+Time: 00:00:00 
+
+Create Bag of Visual Features
+
+Training AKAZE K-Means
+

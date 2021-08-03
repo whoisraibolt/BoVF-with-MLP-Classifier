@@ -1,0 +1,234 @@
+Detector selected: <ORB 0x7f720f89b0>
+
+Descriptor selected: <ORB 0x7f720f8a50>
+
+Training-set path: Datasets/FEI/Dataset/Train/
+
+Test-set path: Datasets/FEI/Dataset/Test/
+
+Number of Classes: 2
+
+Extract Features
+
+Processing the subdirectory named: happy 	[ 1 / 2 ]
+Extracted ORB 
+
+Processing the subdirectory named: neutral 	[ 2 / 2 ]
+Extracted ORB 
+
+Time: 00:00:01 
+
+Create Bag of Visual Features
+
+Training ORB K-Means
+
+Time: 00:00:01 
+
+ORB Training Data
+
+Processing the subdirectory named: happy 	[ 1 / 2 ]
+
+Processing the subdirectory named: neutral 	[ 2 / 2 ]
+
+Time: 00:00:00 
+
+ORB Testing Data
+
+Processing the subdirectory named: happy 	[ 1 / 2 ]
+
+Processing the subdirectory named: neutral 	[ 2 / 2 ]
+
+Time: 00:00:00 
+
+Training ORB MLP Models
+
+ORB MLP1
+
+Training Set Evaluation
+
+sgd + M = 0 + constant - train score: 0.50
+
+ORB MLP2
+
+Training Set Evaluation
+
+sgd + M = 0.3 + constant - train score: 0.61
+
+ORB MLP3
+
+Training Set Evaluation
+
+sgd + M = 0.6 + constant - train score: 0.57
+
+ORB MLP4
+
+Training Set Evaluation
+
+sgd + M = 0.9 + constant - train score: 0.58
+
+ORB MLP5
+
+Training Set Evaluation
+
+sgd + M = 0.9 + adaptive - train score: 0.58
+
+ORB MLP6
+
+Training Set Evaluation
+
+adam + M = 0.9 + constant - train score: 0.60
+
+Testing ORB MLP Model
+
+ORB MLP1
+
+Testing Set Evaluation
+
+sgd + M = 0 + constant - test score: 0.50
+
+ORB MLP2
+
+Testing Set Evaluation
+
+sgd + M = 0.3 + constant - test score: 0.57
+
+ORB MLP3
+
+Testing Set Evaluation
+
+sgd + M = 0.6 + constant - test score: 0.58
+
+ORB MLP4
+
+Testing Set Evaluation
+
+sgd + M = 0.9 + constant - test score: 0.65
+
+ORB MLP5
+
+Testing Set Evaluation
+
+sgd + M = 0.9 + adaptative - test score: 0.64
+
+ORB MLP6
+
+Testing Set Evaluation
+
+adam + M = 0.9 + constant - test score: 0.70
+
+Classification Report
+
+ORB MLP1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      happy       0.50      1.00      0.67        60
+    neutral       0.00      0.00      0.00        60
+
+avg / total       0.25      0.50      0.33       120
+
+ORB MLP2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.3, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      happy       0.55      0.77      0.64        60
+    neutral       0.61      0.37      0.46        60
+
+avg / total       0.58      0.57      0.55       120
+
+ORB MLP3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.6, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      happy       0.55      0.88      0.68        60
+    neutral       0.71      0.28      0.40        60
+
+avg / total       0.63      0.58      0.54       120
+
+ORB MLP4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      happy       0.62      0.75      0.68        60
+    neutral       0.69      0.55      0.61        60
+
+avg / total       0.66      0.65      0.65       120
+
+ORB MLP5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='adaptive', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      happy       0.84      0.35      0.49        60
+    neutral       0.59      0.93      0.72        60
+
+avg / total       0.71      0.64      0.61       120
+
+ORB MLP6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      happy       0.71      0.67      0.69        60
+    neutral       0.69      0.73      0.71        60
+
+avg / total       0.70      0.70      0.70       120
+

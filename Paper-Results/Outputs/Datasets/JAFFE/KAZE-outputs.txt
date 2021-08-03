@@ -1,0 +1,299 @@
+Detector selected: <xfeatures2d_SIFT 0x7f59a859b0>
+
+Descriptor selected: <xfeatures2d_SIFT 0x7f59a85a50>
+
+Training-set path: Datasets/JAFFE/Dataset/Train/
+
+Test-set path: Datasets/JAFFE/Dataset/Test/
+
+Number of Classes: 7
+
+Extract Features
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+Extracted KAZE 
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+Extracted KAZE 
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+Extracted KAZE 
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+Extracted KAZE 
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+Extracted KAZE 
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+Extracted KAZE 
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+Extracted KAZE 
+
+Time: 00:00:00 
+
+Create Bag of Visual Features
+
+Training KAZE K-Means
+
+Time: 00:00:00 
+
+KAZE Training Data
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+
+Time: 00:00:00 
+
+KAZE Testing Data
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+
+Time: 00:00:00 
+
+Training KAZE MLP Models
+
+KAZE MLP1
+
+Training Set Evaluation
+
+sgd + M = 0 + constant - train score: 0.19
+
+KAZE MLP2
+
+Training Set Evaluation
+
+sgd + M = 0.3 + constant - train score: 0.56
+
+KAZE MLP3
+
+Training Set Evaluation
+
+sgd + M = 0.6 + constant - train score: 0.51
+
+KAZE MLP4
+
+Training Set Evaluation
+
+sgd + M = 0.9 + constant - train score: 0.51
+
+KAZE MLP5
+
+Training Set Evaluation
+
+sgd + M = 0.9 + adaptive - train score: 1.00
+
+KAZE MLP6
+
+Training Set Evaluation
+
+adam + M = 0.9 + constant - train score: 0.89
+
+Testing KAZE MLP Model
+
+KAZE MLP1
+
+Testing Set Evaluation
+
+sgd + M = 0 + constant - test score: 0.08
+
+KAZE MLP2
+
+Testing Set Evaluation
+
+sgd + M = 0.3 + constant - test score: 0.19
+
+KAZE MLP3
+
+Testing Set Evaluation
+
+sgd + M = 0.6 + constant - test score: 0.24
+
+KAZE MLP4
+
+Testing Set Evaluation
+
+sgd + M = 0.9 + constant - test score: 0.22
+
+KAZE MLP5
+
+Testing Set Evaluation
+
+sgd + M = 0.9 + adaptative - test score: 0.21
+
+KAZE MLP6
+
+Testing Set Evaluation
+
+adam + M = 0.9 + constant - test score: 0.22
+
+Classification Report
+
+KAZE MLP1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.00      0.00      0.00        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.09      0.83      0.16         6
+      happy       0.00      0.00      0.00        10
+    neutral       0.00      0.00      0.00        10
+        sad       0.00      0.00      0.00         8
+   surprise       0.00      0.00      0.00         9
+
+avg / total       0.01      0.08      0.01        63
+
+KAZE MLP2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.3, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       1.00      0.20      0.33        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.06      0.17      0.09         6
+      happy       0.09      0.10      0.10        10
+    neutral       0.00      0.00      0.00        10
+        sad       0.07      0.12      0.09         8
+   surprise       0.39      0.78      0.52         9
+
+avg / total       0.24      0.19      0.16        63
+
+KAZE MLP3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.6, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.20      0.10      0.13        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.15      0.83      0.26         6
+      happy       0.33      0.20      0.25        10
+    neutral       1.00      0.10      0.18        10
+        sad       0.00      0.00      0.00         8
+   surprise       0.43      0.67      0.52         9
+
+avg / total       0.32      0.24      0.19        63
+
+KAZE MLP4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.20      0.10      0.13        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.16      0.83      0.27         6
+      happy       0.17      0.10      0.12        10
+    neutral       1.00      0.10      0.18        10
+        sad       0.00      0.00      0.00         8
+   surprise       0.38      0.67      0.48         9
+
+avg / total       0.29      0.22      0.16        63
+
+KAZE MLP5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='adaptive', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.22      0.20      0.21        10
+    disgust       0.17      0.20      0.18        10
+       fear       0.12      0.17      0.14         6
+      happy       0.12      0.10      0.11        10
+    neutral       0.25      0.20      0.22        10
+        sad       0.11      0.12      0.12         8
+   surprise       0.44      0.44      0.44         9
+
+avg / total       0.21      0.21      0.21        63
+
+KAZE MLP6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.35      0.70      0.47        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.00      0.00      0.00         6
+      happy       0.12      0.20      0.15        10
+    neutral       0.43      0.30      0.35        10
+        sad       0.00      0.00      0.00         8
+   surprise       0.33      0.22      0.27         9
+
+avg / total       0.19      0.22      0.19        63
+

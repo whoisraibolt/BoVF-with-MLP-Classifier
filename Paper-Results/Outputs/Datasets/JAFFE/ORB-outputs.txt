@@ -1,0 +1,299 @@
+Detector selected: <ORB 0x7f51dbf990>
+
+Descriptor selected: <ORB 0x7f51dbfa30>
+
+Training-set path: Datasets/JAFFE/Dataset/Train/
+
+Test-set path: Datasets/JAFFE/Dataset/Test/
+
+Number of Classes: 7
+
+Extract Features
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+Extracted ORB 
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+Extracted ORB 
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+Extracted ORB 
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+Extracted ORB 
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+Extracted ORB 
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+Extracted ORB 
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+Extracted ORB 
+
+Time: 00:00:00 
+
+Create Bag of Visual Features
+
+Training ORB K-Means
+
+Time: 00:00:01 
+
+ORB Training Data
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+
+Time: 00:00:00 
+
+ORB Testing Data
+
+Processing the subdirectory named: angry 	[ 1 / 7 ]
+
+Processing the subdirectory named: disgust 	[ 2 / 7 ]
+
+Processing the subdirectory named: fear 	[ 3 / 7 ]
+
+Processing the subdirectory named: happy 	[ 4 / 7 ]
+
+Processing the subdirectory named: neutral 	[ 5 / 7 ]
+
+Processing the subdirectory named: sad 	[ 6 / 7 ]
+
+Processing the subdirectory named: surprise 	[ 7 / 7 ]
+
+Time: 00:00:00 
+
+Training ORB MLP Models
+
+ORB MLP1
+
+Training Set Evaluation
+
+sgd + M = 0 + constant - train score: 0.35
+
+ORB MLP2
+
+Training Set Evaluation
+
+sgd + M = 0.3 + constant - train score: 0.34
+
+ORB MLP3
+
+Training Set Evaluation
+
+sgd + M = 0.6 + constant - train score: 0.35
+
+ORB MLP4
+
+Training Set Evaluation
+
+sgd + M = 0.9 + constant - train score: 0.33
+
+ORB MLP5
+
+Training Set Evaluation
+
+sgd + M = 0.9 + adaptive - train score: 0.92
+
+ORB MLP6
+
+Training Set Evaluation
+
+adam + M = 0.9 + constant - train score: 0.55
+
+Testing ORB MLP Model
+
+ORB MLP1
+
+Testing Set Evaluation
+
+sgd + M = 0 + constant - test score: 0.14
+
+ORB MLP2
+
+Testing Set Evaluation
+
+sgd + M = 0.3 + constant - test score: 0.13
+
+ORB MLP3
+
+Testing Set Evaluation
+
+sgd + M = 0.6 + constant - test score: 0.10
+
+ORB MLP4
+
+Testing Set Evaluation
+
+sgd + M = 0.9 + constant - test score: 0.11
+
+ORB MLP5
+
+Testing Set Evaluation
+
+sgd + M = 0.9 + adaptative - test score: 0.19
+
+ORB MLP6
+
+Testing Set Evaluation
+
+adam + M = 0.9 + constant - test score: 0.14
+
+Classification Report
+
+ORB MLP1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.00      0.00      0.00        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.16      0.83      0.27         6
+      happy       0.25      0.20      0.22        10
+    neutral       1.00      0.10      0.18        10
+        sad       0.06      0.12      0.08         8
+   surprise       0.00      0.00      0.00         9
+
+avg / total       0.22      0.14      0.10        63
+
+ORB MLP2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.3, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.00      0.00      0.00        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.16      0.83      0.26         6
+      happy       0.25      0.20      0.22        10
+    neutral       0.00      0.00      0.00        10
+        sad       0.06      0.12      0.08         8
+   surprise       0.00      0.00      0.00         9
+
+avg / total       0.06      0.13      0.07        63
+
+ORB MLP3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.6, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.00      0.00      0.00        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.15      0.67      0.25         6
+      happy       0.22      0.20      0.21        10
+    neutral       0.00      0.00      0.00        10
+        sad       0.00      0.00      0.00         8
+   surprise       0.00      0.00      0.00         9
+
+avg / total       0.05      0.10      0.06        63
+
+ORB MLP4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.00      0.00      0.00        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.17      0.33      0.22         6
+      happy       0.20      0.10      0.13        10
+    neutral       0.14      0.10      0.12        10
+        sad       0.07      0.25      0.11         8
+   surprise       0.17      0.11      0.13         9
+
+avg / total       0.10      0.11      0.09        63
+
+ORB MLP5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='adaptive', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.09      0.10      0.10        10
+    disgust       0.00      0.00      0.00        10
+       fear       0.17      0.17      0.17         6
+      happy       0.45      0.50      0.48        10
+    neutral       0.25      0.40      0.31        10
+        sad       0.00      0.00      0.00         8
+   surprise       0.33      0.11      0.17         9
+
+avg / total       0.19      0.19      0.18        63
+
+ORB MLP6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      angry       0.20      0.10      0.13        10
+    disgust       0.20      0.10      0.13        10
+       fear       0.12      0.33      0.17         6
+      happy       0.15      0.30      0.20        10
+    neutral       0.00      0.00      0.00        10
+        sad       0.00      0.00      0.00         8
+   surprise       0.22      0.22      0.22         9
+
+avg / total       0.13      0.14      0.12        63
+

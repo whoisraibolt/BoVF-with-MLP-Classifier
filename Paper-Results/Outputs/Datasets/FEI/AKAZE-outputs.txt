@@ -1,0 +1,234 @@
+Detector selected: <AKAZE 0x7f67579990>
+
+Descriptor selected: <AKAZE 0x7f67579a30>
+
+Training-set path: Datasets/FEI/Dataset/Train/
+
+Test-set path: Datasets/FEI/Dataset/Test/
+
+Number of Classes: 2
+
+Extract Features
+
+Processing the subdirectory named: happy 	[ 1 / 2 ]
+Extracted AKAZE 
+
+Processing the subdirectory named: neutral 	[ 2 / 2 ]
+Extracted AKAZE 
+
+Time: 00:00:02 
+
+Create Bag of Visual Features
+
+Training AKAZE K-Means
+
+Time: 00:00:00 
+
+AKAZE Training Data
+
+Processing the subdirectory named: happy 	[ 1 / 2 ]
+
+Processing the subdirectory named: neutral 	[ 2 / 2 ]
+
+Time: 00:00:00 
+
+AKAZE Testing Data
+
+Processing the subdirectory named: happy 	[ 1 / 2 ]
+
+Processing the subdirectory named: neutral 	[ 2 / 2 ]
+
+Time: 00:00:01 
+
+Training AKAZE MLP Models
+
+AKAZE MLP1
+
+Training Set Evaluation
+
+sgd + M = 0 + constant - train score: 0.93
+
+AKAZE MLP2
+
+Training Set Evaluation
+
+sgd + M = 0.3 + constant - train score: 0.91
+
+AKAZE MLP3
+
+Training Set Evaluation
+
+sgd + M = 0.6 + constant - train score: 0.91
+
+AKAZE MLP4
+
+Training Set Evaluation
+
+sgd + M = 0.9 + constant - train score: 0.89
+
+AKAZE MLP5
+
+Training Set Evaluation
+
+sgd + M = 0.9 + adaptive - train score: 0.94
+
+AKAZE MLP6
+
+Training Set Evaluation
+
+adam + M = 0.9 + constant - train score: 0.93
+
+Testing AKAZE MLP Model
+
+AKAZE MLP1
+
+Testing Set Evaluation
+
+sgd + M = 0 + constant - test score: 0.85
+
+AKAZE MLP2
+
+Testing Set Evaluation
+
+sgd + M = 0.3 + constant - test score: 0.87
+
+AKAZE MLP3
+
+Testing Set Evaluation
+
+sgd + M = 0.6 + constant - test score: 0.83
+
+AKAZE MLP4
+
+Testing Set Evaluation
+
+sgd + M = 0.9 + constant - test score: 0.84
+
+AKAZE MLP5
+
+Testing Set Evaluation
+
+sgd + M = 0.9 + adaptative - test score: 0.83
+
+AKAZE MLP6
+
+Testing Set Evaluation
+
+adam + M = 0.9 + constant - test score: 0.86
+
+Classification Report
+
+AKAZE MLP1
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0, nesterovs_momentum=True, power_t=0.5, random_state=2019,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      happy       0.94      0.75      0.83        60
+    neutral       0.79      0.95      0.86        60
+
+avg / total       0.86      0.85      0.85       120
+
+AKAZE MLP2
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.3, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      happy       0.89      0.83      0.86        60
+    neutral       0.84      0.90      0.87        60
+
+avg / total       0.87      0.87      0.87       120
+
+AKAZE MLP3
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.6, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      happy       0.98      0.68      0.80        60
+    neutral       0.76      0.98      0.86        60
+
+avg / total       0.87      0.83      0.83       120
+
+AKAZE MLP4
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      happy       0.82      0.88      0.85        60
+    neutral       0.87      0.80      0.83        60
+
+avg / total       0.84      0.84      0.84       120
+
+AKAZE MLP5
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='adaptive', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='sgd', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      happy       0.88      0.77      0.82        60
+    neutral       0.79      0.90      0.84        60
+
+avg / total       0.84      0.83      0.83       120
+
+AKAZE MLP6
+
+Classification report for Classifier: 
+
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(50, 30, 20, 20, 20, 30, 50),
+       learning_rate='constant', learning_rate_init=0.01, max_iter=5000,
+       momentum=0.9, nesterovs_momentum=True, power_t=0.5,
+       random_state=2019, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False): 
+
+              precision    recall  f1-score   support
+
+      happy       0.88      0.83      0.85        60
+    neutral       0.84      0.88      0.86        60
+
+avg / total       0.86      0.86      0.86       120
+
