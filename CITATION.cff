@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Comparative Evaluation of Feature Descriptors Through Bag of Visual Features with Multilayer Perceptron on Embedded GPU System"
+abstract: "Comparative evaluation of local feature descriptors and local binary descriptors through Bag of Visual Features with a Multilayer Perceptron classifier on an embedded GPU system. Source code of the paper published at LARS/SBR 2020."
+authors:
+  - family-names: Raibolt
+    given-names: Alexandra
+    orcid: "https://orcid.org/0000-0002-8982-596X"
+  - family-names: Angonese
+    given-names: Alberto
+  - family-names: Rosa
+    given-names: Paulo
+repository-code: "https://github.com/whoisraibolt/BoVF-with-MLP-Classifier"
+license: MIT
+version: v1.0.0
+date-released: "2026-08-17"
+keywords:
+  - computer-vision
+  - bag-of-visual-features
+  - multilayer-perceptron
+  - feature-descriptors
+  - embedded-systems
+  - nvidia-jetson-nano
+  - opencv
+  - python
+references:
+  - type: conference-paper
+    title: "Comparative Evaluation of Feature Descriptors Through Bag of Visual Features with Multilayer Perceptron on Embedded GPU System"
+    authors:
+      - family-names: Raibolt
+        given-names: Alexandra
+        orcid: "https://orcid.org/0000-0002-8982-596X"
+      - family-names: Angonese
+        given-names: Alberto
+      - family-names: Rosa
+        given-names: Paulo
+    conference:
+      name: "17th IEEE Latin American Robotics Symposium / 8th Brazilian Symposium of Robotics (LARS/SBR)"
+    year: 2020
