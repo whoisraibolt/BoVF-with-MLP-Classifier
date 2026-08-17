@@ -8,33 +8,33 @@ authors:
     given-names: Alexandra
     orcid: "https://orcid.org/0000-0002-8982-596X"
   - family-names: Angonese
-    given-names: Alberto
+    given-names: Alberto Torres
   - family-names: Rosa
-    given-names: Paulo
+    given-names: Paulo Fernando Ferreira
 repository-code: "https://github.com/whoisraibolt/BoVF-with-MLP-Classifier"
 license: MIT
-version: v1.0.0
+version: v1.0.1
 date-released: "2026-08-17"
 keywords:
   - computer-vision
   - bag-of-visual-features
-  - multilayer-perceptron
   - feature-descriptors
   - embedded-systems
   - nvidia-jetson-nano
   - opencv
   - python
+  - multilayer-perceptron
+  - mlp-classifier
 references:
   - type: conference-paper
     title: "Comparative Evaluation of Feature Descriptors Through Bag of Visual Features with Multilayer Perceptron on Embedded GPU System"
     authors:
       - family-names: Raibolt
         given-names: Alexandra
-        orcid: "https://orcid.org/0000-0002-8982-596X"
       - family-names: Angonese
-        given-names: Alberto
+        given-names: Alberto Torres
       - family-names: Rosa
-        given-names: Paulo
+        given-names: Paulo Fernando Ferreira
     conference:
       name: "17th IEEE Latin American Robotics Symposium / 8th Brazilian Symposium of Robotics (LARS/SBR)"
     year: 2020
