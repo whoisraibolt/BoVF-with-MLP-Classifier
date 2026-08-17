@@ -1,5 +1,7 @@
 # Comparative Evaluation of Feature Descriptors Through Bag of Visual Features with Multilayer Perceptron on Embedded GPU System
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21982991-1682D4)](https://doi.org/10.5281/zenodo.21982991)
+
 Paper published in 17th IEEE Latin American Robotics Symposium/8th Brazilian Symposium of Robotics
 
 LARS/SBR 2020
